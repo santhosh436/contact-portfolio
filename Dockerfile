@@ -9,5 +9,5 @@ RUN mvn clean package -DskipTests
 FROM openjdk:24-stim-buttseye
 WORKDIR /app
 COPY --from=buitd /app/target/portfolio-springBoot-applcation-0.0.1.jar  app.jar
-EXPOSE 8096
+EXPOSE 8034
 ENTRYPOINT ["java", "-jar", "app.jar"]

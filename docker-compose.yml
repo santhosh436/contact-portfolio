@@ -1,9 +1,9 @@
 version: '3.8'
 services:
   web:
-    image: nginx
+    image: myimage
     ports:
-      - "80:80"
+      - "8034:8034"
   db:
     image: mysql
     environment:
